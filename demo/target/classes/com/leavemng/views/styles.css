@@ -1,0 +1,11 @@
+.root {
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-font-size: 14pt;
+}
+
+.label {
+    -fx-font-size: 12pt;
+}

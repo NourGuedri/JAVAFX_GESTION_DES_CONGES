@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="437.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leavemng.controllers.admin.LeaveTypeController">
+    <Label text="Add Leave Type"/>
+    <TextField fx:id="nameField" promptText="Name"/>
+    <TextField fx:id="maxDaysField" promptText="Max Days"/>
+    <TextField fx:id="descriptionField" promptText="Description"/>
+    <Button fx:id="addButton" text="Add" onAction="#handleAddButtonAction" alignment="CENTER" mnemonicParsing="false" prefHeight="93.0" prefWidth="400.0" style="-fx-background-color: #298eb5;" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Button>
+    
+    <Label fx:id="error"/>
+</VBox>

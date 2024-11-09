@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leavemng.controllers.admin.ViewLeaveTypesController">
+    <children>
+        <TableView fx:id="leaveTypesTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="leaveTypeIdColumn" text="ID" />
+                <TableColumn fx:id="leaveTypeNameColumn" text="Name" />
+                <TableColumn fx:id="leaveTypeDescriptionColumn" text="Description" />
+                <TableColumn fx:id="leaveTypeDaysColumn" text="Days" />
+            </columns>
+        </TableView>
+        <HBox spacing="10">
+            <Button text="Delete Leave Type" onAction="#handleDeleteLeaveTypeButtonAction" />
+            <Button text="Dashboard" onAction="#handleDashboardButtonAction"/>
+        </HBox>
+    </children>
+</VBox>
